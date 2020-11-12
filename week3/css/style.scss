@@ -1,0 +1,835 @@
+                    /* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+                    /*reset_start*/
+                    
+                    html,
+                    body,
+                    div,
+                    span,
+                    applet,
+                    object,
+                    iframe,
+                    h1,
+                    h2,
+                    h3,
+                    h4,
+                    h5,
+                    h6,
+                    p,
+                    blockquote,
+                    pre,
+                    a,
+                    abbr,
+                    acronym,
+                    address,
+                    big,
+                    cite,
+                    code,
+                    del,
+                    dfn,
+                    em,
+                    img,
+                    ins,
+                    kbd,
+                    q,
+                    s,
+                    samp,
+                    small,
+                    strike,
+                    strong,
+                    sub,
+                    sup,
+                    tt,
+                    var,
+                    b,
+                    u,
+                    i,
+                    center,
+                    dl,
+                    dt,
+                    dd,
+                    ol,
+                    ul,
+                    li,
+                    fieldset,
+                    form,
+                    label,
+                    legend,
+                    table,
+                    caption,
+                    tbody,
+                    tfoot,
+                    thead,
+                    tr,
+                    th,
+                    td,
+                    article,
+                    aside,
+                    canvas,
+                    details,
+                    embed,
+                    figure,
+                    figcaption,
+                    footer,
+                    header,
+                    hgroup,
+                    menu,
+                    nav,
+                    output,
+                    ruby,
+                    section,
+                    summary,
+                    time,
+                    mark,
+                    audio,
+                    video {
+                        margin: 0;
+                        padding: 0;
+                        border: 0;
+                        font-size: 100%;
+                        font: inherit;
+                        vertical-align: baseline;
+                    }
+                    /* HTML5 display-role reset for older browsers */
+                    
+                    article,
+                    aside,
+                    details,
+                    figcaption,
+                    figure,
+                    footer,
+                    header,
+                    hgroup,
+                    menu,
+                    nav,
+                    section {
+                        display: block;
+                    }
+                    
+                    body {
+                        line-height: 1;
+                    }
+                    
+                    ol,
+                    ul {
+                        list-style: none;
+                    }
+                    
+                    blockquote,
+                    q {
+                        quotes: none;
+                    }
+                    
+                    blockquote:before,
+                    blockquote:after,
+                    q:before,
+                    q:after {
+                        content: '';
+                        content: none;
+                    }
+                    
+                    table {
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                    }
+                    
+                    img {
+                        max-width: 100px;
+                        height: auto;
+                    }
+                    /*box-size-clear*/
+                    
+                    *,
+                    *::before,
+                    *::after {
+                        box-sizing: border-box;
+                    }
+                    /*font-links*/
+                    
+                    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400&display=swap");
+                    /*reset_end*/
+                    
+                    body {
+                        font-family: 'Noto Sans', sans-serif;
+                    }
+                    /*color*/
+                    
+                    $primary:#AA0601;
+                    $secondary:#000000;
+                    $assist1:#650300;
+                    $assist2:#FBF2F2;
+                    $light:#fff;
+                    $dark:#000;
+                    /*font-size*/
+                    
+                    $f_xs:14px;
+                    $f_s:16px;
+                    $f_m:20px;
+                    $f_l:24px;
+                    $f_xl:32px;
+                    $f_xxl:36px;
+                    $f_xxxl:64px;
+                    /*spacer*/
+                    
+                    $spacer: 16px;
+                    $spacers: ( "1": $spacer,
+                    "2": $spacer * 1.5,
+                    "3": $spacer * 2,
+                    "4": $spacer * 2.5,
+                    "5": $spacer * 3,
+                    "6": $spacer * 3.5,
+                    "7": $spacer * 4,
+                    "8": $spacer * 5,
+                    "9": $spacer * 5.5);
+                    /*layout*/
+                    
+                    .col-1 {
+                        -webkit-box-flex: 0;
+                        -ms-flex: 0 0 auto;
+                        flex: 0 0 auto;
+                        width: 8.33333%;
+                    }
+                    
+                    .col-2 {
+                        -webkit-box-flex: 0;
+                        -ms-flex: 0 0 auto;
+                        flex: 0 0 auto;
+                        width: 16.66667%;
+                    }
+                    
+                    .col-3 {
+                        -webkit-box-flex: 0;
+                        -ms-flex: 0 0 auto;
+                        flex: 0 0 auto;
+                        width: 25%;
+                    }
+                    
+                    .col-4 {
+                        -webkit-box-flex: 0;
+                        -ms-flex: 0 0 auto;
+                        flex: 0 0 auto;
+                        width: 33.33333%;
+                    }
+                    
+                    .col-5 {
+                        -webkit-box-flex: 0;
+                        -ms-flex: 0 0 auto;
+                        flex: 0 0 auto;
+                        width: 41.66667%;
+                    }
+                    
+                    .col-6 {
+                        -webkit-box-flex: 0;
+                        -ms-flex: 0 0 auto;
+                        flex: 0 0 auto;
+                        width: 50%;
+                    }
+                    
+                    .col-7 {
+                        -webkit-box-flex: 0;
+                        -ms-flex: 0 0 auto;
+                        flex: 0 0 auto;
+                        width: 58.33333%;
+                    }
+                    
+                    .col-8 {
+                        -webkit-box-flex: 0;
+                        -ms-flex: 0 0 auto;
+                        flex: 0 0 auto;
+                        width: 66.66667%;
+                    }
+                    
+                    .col-9 {
+                        -webkit-box-flex: 0;
+                        -ms-flex: 0 0 auto;
+                        flex: 0 0 auto;
+                        width: 75%;
+                    }
+                    
+                    .col-10 {
+                        -webkit-box-flex: 0;
+                        -ms-flex: 0 0 auto;
+                        flex: 0 0 auto;
+                        width: 83.33333%;
+                    }
+                    
+                    .col-11 {
+                        -webkit-box-flex: 0;
+                        -ms-flex: 0 0 auto;
+                        flex: 0 0 auto;
+                        width: 91.66667%;
+                    }
+                    
+                    .col-12 {
+                        -webkit-box-flex: 0;
+                        -ms-flex: 0 0 auto;
+                        flex: 0 0 auto;
+                        width: 100%;
+                    }
+                    
+                    .d {
+                        &-flex {
+                            display: flex;
+                        }
+                        &-wrap {
+                            flex-wrap: wrap;
+                        }
+                        &-block {
+                            display: block;
+                        }
+                        &-justify-content-start {
+                            justify-content: flex-start;
+                        }
+                        &-justify-content-center {
+                            justify-content: center;
+                        }
+                        &-justify-content-between {
+                            justify-content: space-between;
+                        }
+                        &-justify-content-around {
+                            justify-content: space-around;
+                        }
+                        &-align-items-center {
+                            align-items: center;
+                        }
+                        &-direction-row-reverse {
+                            flex-direction: row-reverse;
+                        }
+                        &-align-self-center {
+                            align-self: center;
+                        }
+                    }
+                    /*text*/
+                    
+                    .text {
+                        &-center {
+                            text-align: center;
+                        }
+                        &-left {
+                            text-align: left;
+                        }
+                        &-right {
+                            text-align: right;
+                        }
+                        &-bold {
+                            font-weight: bold;
+                        }
+                        &-normal {
+                            font-weight: normal;
+                        }
+                    }
+                    
+                    .text {
+                        &-primary {
+                            color: $primary;
+                        }
+                        &-light {
+                            color: $light;
+                        }
+                        &-dark {
+                            color: $dark;
+                        }
+                        &-assist1 {
+                            color: $assist1;
+                        }
+                        &-assist2 {
+                            color: $assist2;
+                        }
+                    }
+                    /*bg*/
+                    
+                    .bg {
+                        &-primary {
+                            background-color: $primary;
+                            color: $light;
+                        }
+                        &-secondary {
+                            background-color: $secondary;
+                            color: $light;
+                        }
+                        &-assist {
+                            background-color: $assist2;
+                            color: $dark;
+                        }
+                    }
+                    /*spacer*/
+                    
+                    @each $i,
+                    $val in $spacers {
+                        .m {
+                            &l-#{$i} {
+                                margin-left: $val;
+                            }
+                            &r-#{$i} {
+                                margin-right: $val;
+                            }
+                            &b-#{$i} {
+                                margin-bottom: $val;
+                            }
+                            &t-#{$i} {
+                                margin-top: $val;
+                            }
+                            &y-#{$i} {
+                                margin: $val 0;
+                            }
+                            &x-#{$i} {
+                                margin: 0 $val;
+                            }
+                        }
+                        .p {
+                            &l-#{$i} {
+                                padding-left: $val;
+                            }
+                            &r-#{$i} {
+                                padding-right: $val;
+                            }
+                            &b-#{$i} {
+                                padding-bottom: $val;
+                            }
+                            &t-#{$i} {
+                                padding-top: $val;
+                            }
+                            &y-#{$i} {
+                                padding: $val 0;
+                            }
+                            &x-#{$i} {
+                                padding: 0 $val;
+                            }
+                        }
+                    }
+                    
+                    .mr-auto {
+                        margin-right: auto !important;
+                    }
+                    
+                    .ml-auto {
+                        margin-left: auto !important;
+                    }
+                    /*font*/
+                    
+                    .fz {
+                        &-xs {
+                            font-size: $f_xs;
+                        }
+                        &-s {
+                            font-size: $f_s;
+                        }
+                        &-m {
+                            font-size: $f_m;
+                        }
+                        &-l {
+                            font-size: $f_l;
+                        }
+                        &-xl {
+                            font-size: $f_xl;
+                        }
+                        &-xxl {
+                            font-size: $f_xxl;
+                        }
+                        &-xxxl {
+                            font-size: $f_xxxl;
+                        }
+                    }
+                    /*      */
+                    
+                    .container {
+                        max-width: 1110px;
+                        margin: 0 auto;
+                    }
+                    
+                    .p-relative {
+                        position: relative;
+                    }
+                    
+                    .p-absolute {
+                        position: absolute;
+                    }
+                    
+                    nav ul li {
+                        line-height: 49px;
+                    }
+                    
+                    .banner {
+                        background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner.png?raw=true);
+                        background-position: center center;
+                        background-size: cover;
+                        height: 840px;
+                    }
+                    
+                    .title {
+                        width: 576px;
+                    }
+                    
+                    .series .item .visual {
+                        width: 635px;
+                        height: 320px;
+                    }
+                    
+                    .visual-optical {
+                        background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-1.png?raw=true);
+                        background-position: center center;
+                        background-size: cover;
+                        display: block;
+                    }
+                    
+                    .visual-sunglasses {
+                        background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-2.png?raw=true);
+                        background-position: center center;
+                        background-size: cover;
+                        display: block;
+                    }
+                    
+                    .visual-functional {
+                        background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-3.png?raw=true);
+                        background-position: center center;
+                        background-size: cover;
+                        display: block;
+                    }
+                    
+                    .series .item .icon {
+                        margin-right: 8px;
+                    }
+                    
+                    .series .item {
+                        width: 1100px;
+                    }
+                    
+                    a.logo {
+                        height: 48.57px;
+                    }
+                    
+                    nav ul li a {
+                        color: white;
+                        text-decoration: none;
+                        display: block;
+                        padding: 40px 32px;
+                    }
+                    
+                    .inner {
+                        max-width: 1100px;
+                    }
+                    
+                    .inner {
+                        span,
+                        h1 {
+                            display: block;
+                        }
+                    }
+                    
+                    h2 {
+                        font-size: 48px;
+                        font-weight: bold;
+                        color: $primary;
+                        line-height: 72px;
+                    }
+                    
+                    h4 {
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: $primary;
+                        line-height: 36px;
+                    }
+                    
+                    .d-none {
+                        display: none;
+                    }
+                    
+                    .main img {
+                        height: 100px;
+                        ;
+                    }
+                    
+                    .main h4 {
+                        margin-bottom: 4px;
+                    }
+                    
+                    .main p {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                    
+                    .series .h3 {
+                        font-size: 48px;
+                        line-height: 72px;
+                        font-weight: bold;
+                    }
+                    
+                    .series .item-body {
+                        height: 83px;
+                        margin: 0 30px;
+                    }
+                    
+                    .series .liner {
+                        top: 50%;
+                        left: 50%;
+                        -webkit-transform: translate(-50%, -50%);
+                        -ms-transform: translate(-50%, -50%);
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                    }
+                    
+                    .crossover {
+                        background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/bg.png?raw=true);
+                        background-position: center center;
+                        background-size: cover;
+                    }
+                    
+                    .crossover .h1 {
+                        font-size: 72px;
+                        font-weight: bold;
+                        color: $primary;
+                        line-height: 108px;
+                    }
+                    
+                    .crossover .zone {
+                        max-width: 540px;
+                        padding: 188px 0;
+                        display: block;
+                        position: relative;
+                    }
+                    
+                    .crossover .cover {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(255, 255, 255, 0.6);
+                        top: 0;
+                        left: 0;
+                    }
+                    
+                    .crossover .doublea {
+                        background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-8.png?raw=true);
+                        background-position: center center;
+                        background-size: cover;
+                    }
+                    
+                    .crossover .youth {
+                        background-image: url(https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-9.png?raw=true);
+                        background-position: center center;
+                        background-size: cover;
+                    }
+                    
+                    .hot img {
+                        max-width: 100%;
+                    }
+                    
+                    .hot .card {
+                        max-width: 255px;
+                        border: 1px solid #dee2e6;
+                        display: block;
+                    }
+                    
+                    .hot ul li h5 {
+                        font-size: 14px;
+                        line-height: 21px;
+                        margin-bottom: 14px;
+                    }
+                    
+                    .hot ul li p {
+                        line-height: 24px;
+                    }
+                    
+                    .hot .info {
+                        color: #707070;
+                        margin: 10px auto;
+                        display: block;
+                    }
+                    
+                    .hot ul {
+                        width: 1100px;
+                    }
+                    
+                    .hot .m-16 {
+                        margin: 16px;
+                    }
+                    
+                    .contact .inner-frame {
+                        max-width: 730px;
+                        margin: 0 auto;
+                    }
+                    
+                    form .form-field label {
+                        display: block;
+                        margin-bottom: 4px;
+                    }
+                    
+                    form .form-field input,
+                    form .form-field textarea {
+                        width: 100%;
+                        padding: 14px 16px;
+                        border: 1px solid #000;
+                    }
+                    
+                    form .btn-send {
+                        padding: 16px 143px;
+                        background-color: $primary;
+                        color: $light;
+                        text-decoration: none;
+                    }
+                    
+                    footer .row {
+                        height: 48px;
+                    }
+                    /*breakpoint*/
+                    
+                    @media (max-width: 991.98px) {
+                        .d-md-center {
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+                        }
+                        .series .item .visual {
+                            width: 390px;
+                            height: 168px;
+                        }
+                        .series .item {
+                            padding: 0 3%;
+                        }
+                        .series .item .h3 {
+                            font-size: 28px;
+                        }
+                        .series .item .icon {
+                            width: 32px;
+                        }
+                        .d-md-row {
+                            flex-direction: row;
+                        }
+                    }
+                    
+                    @media (max-width: 767.98px) {
+                        .col-sm-6 {
+                            -webkit-box-flex: 0;
+                            -ms-flex: 0 0 auto;
+                            flex: 0 0 auto;
+                            width: 50%;
+                        }
+                        .col-sm-12 {
+                            -webkit-box-flex: 0;
+                            -ms-flex: 0 0 auto;
+                            flex: 0 0 auto;
+                            width: 100%;
+                        }
+                        .d-sm-center {
+                            -webkit-box-pack: center;
+                            -ms-flex-pack: center;
+                            justify-content: center;
+                        }
+                        .mr-sm-3 {
+                            margin-right: 10px;
+                        }
+                        .fz-xxl {
+                            font-size: 20px;
+                        }
+                        .fz-xxxl {
+                            font-size: 48px;
+                        }
+                        .banner {
+                            height: 840px;
+                        }
+                        .d-sm-none {
+                            display: none;
+                        }
+                        .d-sm-nowrap {
+                            flex-wrap: nowrap;
+                        }
+                        .series .item .visual {
+                            width: 100%;
+                        }
+                        .hot .card {
+                            max-width: 100%;
+                        }
+                        .hot .card img {
+                            width: 100%;
+                        }
+                        .mr-md-2 {
+                            margin-right: 32px;
+                        }
+                    }
+                    
+                    @media (max-width: 652.98px) {
+                        nav ul li {
+                            width: 50%;
+                            text-align: center;
+                            border: 1px solid #fff;
+                        }
+                        nav ul li a {
+                            padding: 8px 32px;
+                        }
+                        nav a.logo {
+                            margin: 10px auto;
+                        }
+                    }
+                    
+                    @media (max-width: 575.98px) {
+                        .fz-xxl {
+                            font-size: 16px;
+                        }
+                        .fz-xxxl {
+                            font-size: 32px;
+                        }
+                        .inner {
+                            padding: 15px;
+                        }
+                        .banner {
+                            height: 394px !important;
+                        }
+                        .col-xs-12 {
+                            -webkit-box-flex: 0;
+                            -ms-flex: 0 0 auto;
+                            flex: 0 0 auto;
+                            width: 100%;
+                        }
+                        .d-xs-block {
+                            display: block;
+                        }
+                        .d-xs-none {
+                            display: none;
+                        }
+                        .d-xs-relative {
+                            display: relative;
+                        }
+                        .series .liner {
+                            display: flex;
+                            align-items: center;
+                        }
+                        .mb-xs-1 {
+                            margin-bottom: 16px;
+                        }
+                        footer .social-icon img {
+                            width: 24px;
+                        }
+                        footer .icon .icon-img {
+                            width: 20px;
+                        }
+                        footer .icon-glasses {
+                            right: 15px;
+                            margin-top: 30px;
+                        }
+                        .mr-xs-0 {
+                            margin-right: 0px;
+                        }
+                        footer .row {
+                            height: 32px;
+                        }
+                        .mb-xs-2 {
+                            margin-bottom: 24px;
+                        }
+                        .inner-xs {
+                            padding: 0 3%;
+                        }
+                    }
+                    /*
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+*/
